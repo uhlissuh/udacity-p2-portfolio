@@ -5,13 +5,12 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet"/>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/styles.css"/>
-    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
   </head>
   <body>
     <div class="container">
-      <div class="row top-header">
+      <header class="row">
         <div class="col-xs-6">
           <picture>
             <source srcset="./images/alissa.jpeg" media="(min-width: 500px)">
@@ -22,33 +21,39 @@
             <h1 class="text-thin name">Alissa Sobo</h1>
             <h4 class="text-thin sub-line">Learning to Code</h4>
         </div>
+      </header>
+
+      <div class="row main-banner">
+        <div class="col-md-12">
+          <img class="img-responsive" src="./images/lou-sheep.jpeg" alt="My Daughter">
+        </div>
       </div>
-      <div class="main-banner">
-        <img class="img-responsive" src="./images/lou-sheep.jpeg" alt="My Daughter">
-      </div>
+
       <div class="row">
         <div class="col-md-12">
           <h2 class="text-muted">Featured Work</h2>
         </div>
       </div>
-      <div class="row text-center">
-        <div class="col-md-4 col-sm-6">
+
+      <section id="projects" class="row text-center">
+        <article class="col-md-4 col-sm-6">
           <img class="img-responsive project" data-toggle="modal" data-target="#project1" src="./images/movie_screenshot.png" alt="screenshot">
           <h4>Movie Trailer Website</h4>
           <p><a href="https://github.com/uhlissuh/udacity-p1-movie-trailer">Link to project</a></p>
-        </div>
-        <div class="col-md-4 col-sm-6">
+        </article>
+        <article class="col-md-4 col-sm-6">
           <img class="img-responsive project" src="http://placehold.it/555x300" alt="">
           <h4>Coming Soon</h4>
           <p><a href="http://github.com">Link to project</a></p>
-        </div>
-        <div class="col-md-4 col-sm-6">
+        </article>
+        <article class="col-md-4 col-sm-6">
           <img class="img-responsive project" src="http://placehold.it/555x300" alt="">
           <h4>Coming Soon</h4>
           <p><a href="http://github.com">Link to project</a></p>
-        </div>
-      </div>
+        </article>
+      </section>
     </div>
+
     <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -66,5 +71,7 @@
         </div>
       </div>
     </div>
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
   </body>
 </html>

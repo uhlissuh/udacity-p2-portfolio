@@ -1,5 +1,5 @@
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #2d3c49;
   font-weight: 300;
 }
@@ -22,10 +22,8 @@ body {
 }
 
 
-.top-header {
-  border-bottom-width: 3px;
-  border-color: #7d97ad;
-  border-bottom-style: solid;
+header {
+  border-bottom: 3px solid #7d97ad;
 }
 
 .main-banner {
